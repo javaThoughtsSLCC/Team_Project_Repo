@@ -18,6 +18,8 @@ import java.awt.GridBagConstraints;
 import java.awt.Insets;
 
 public class MainMenu extends JFrame {
+	
+	private String WTF = "ERG.  HARUMPH.";
 
 	private JPanel contentPane;
 	private JPanel cardLayoutPanel;
