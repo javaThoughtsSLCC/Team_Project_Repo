@@ -139,7 +139,8 @@ public class MainMenu extends JFrame {
 		JButton startNewCrseBtn = new JButton("Start New Course");
 		startNewCrseBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				((CardLayout) cardLayoutPanel.getLayout()).show(cardLayoutPanel, TOPIC_CHOICE_PANEL);
+//				((CardLayout) cardLayoutPanel.getLayout()).show(cardLayoutPanel, TOPIC_CHOICE_PANEL);
+				changePanel(TOPIC_CHOICE_PANEL);//since we are going to be using this casted method a lot I figured doing a method call would make it more clear
 				
 			}
 		});
@@ -158,5 +159,8 @@ public class MainMenu extends JFrame {
 		lblWelcomToJavathoughts.setHorizontalAlignment(SwingConstants.CENTER);
 		return lblWelcomToJavathoughts;
 	}
-
+	public void changePanel(String panelBeingChanged){
+		((CardLayout) cardLayoutPanel.getLayout()).show(cardLayoutPanel, panelBeingChanged);
+		
+	}
 }
