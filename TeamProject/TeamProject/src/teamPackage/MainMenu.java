@@ -37,6 +37,8 @@ public class MainMenu extends JFrame {
 		WTF = "works_3: Do we stage and commit the whole project, not just the MainMenu.java file?";
 		WTF = "works_4: Maybe so.  (second machine)";
 		WTF = "WORKS_1: One last run of Push and Pull...entire Project to staging (first machine)";
+		WTF = "WORKS_2: And last run the other way...(local menu this time, right click on Project and"
+				+ "commit from there)";
 		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
