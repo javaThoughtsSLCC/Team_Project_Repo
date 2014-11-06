@@ -33,6 +33,7 @@ public class MainMenu extends JFrame {
 		WTF = "change_4 (first machine)";
 		WTF = "change_5 (second machine)";
 		WTF = "works_1 (first machine)";
+		WTF = "works_2: testing local menu in Package Explorer for committing: (second machine)";
 		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
