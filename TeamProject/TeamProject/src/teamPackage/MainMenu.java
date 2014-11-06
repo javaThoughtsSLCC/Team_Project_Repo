@@ -19,7 +19,7 @@ import java.awt.Insets;
 
 public class MainMenu extends JFrame {
 	
-	private String WTF = "ERG.  HARUMPH.  No comment?";
+	private static String WTF = "ERG.  HARUMPH.  No comment?";
 
 	private JPanel contentPane;
 	private JPanel cardLayoutPanel;
@@ -27,6 +27,8 @@ public class MainMenu extends JFrame {
 	private final String MAIN_MENU_PANEL = "main menu panel with buttons for choices";
 
 	public static void main(String[] args) {
+		WTF = "Making this change from my second machine to test Pull/Push";
+		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
