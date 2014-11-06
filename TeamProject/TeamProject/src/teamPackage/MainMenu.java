@@ -19,7 +19,7 @@ import java.awt.Insets;
 
 public class MainMenu extends JFrame {
 	
-	private String WTF = "ERG.  HARUMPH.";
+	private String WTF = "ERG.  HARUMPH.  No comment?";
 
 	private JPanel contentPane;
 	private JPanel cardLayoutPanel;
