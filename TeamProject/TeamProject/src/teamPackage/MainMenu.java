@@ -19,7 +19,7 @@ import java.awt.Insets;
 
 public class MainMenu extends JFrame {
 	
-	private static String WTF = "ERG.  HARUMPH.  No comment?";
+	private static String WTF = "MAYBE IT WORKS NOW!";
 
 	private JPanel contentPane;
 	private JPanel cardLayoutPanel;
@@ -32,6 +32,8 @@ public class MainMenu extends JFrame {
 		WTF = "change_3 (second machine)";
 		WTF = "change_4 (first machine)";
 		WTF = "change_5 (second machine)";
+		WTF = "works_1 (first machine)";
+		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
