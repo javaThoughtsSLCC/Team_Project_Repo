@@ -31,7 +31,7 @@ public class MainMenu extends JFrame {
 		WTF = "change_2 (first machine)";
 		WTF = "change_3 (second machine)";
 		WTF = "change_4 (first machine)";
-		
+		WTF = "change_5 (second machine)";
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
