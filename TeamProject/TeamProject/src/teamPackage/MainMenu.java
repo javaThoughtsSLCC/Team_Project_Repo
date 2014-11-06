@@ -29,6 +29,7 @@ public class MainMenu extends JFrame {
 	public static void main(String[] args) {
 		WTF = "Making this change from my second machine to test Pull/Push";
 		WTF = "change_2 (first machine)";
+		WTF = "change_3 (second machine)";
 		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
