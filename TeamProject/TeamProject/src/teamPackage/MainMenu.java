@@ -1,5 +1,5 @@
 package teamPackage;
-//small demo change
+
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
@@ -19,26 +19,13 @@ import java.awt.Insets;
 
 public class MainMenu extends JFrame {
 	
-	private static String WTF = "MAYBE IT WORKS NOW!";
-
+	
 	private JPanel contentPane;
 	private JPanel cardLayoutPanel;
 	private final String TOPIC_CHOICE_PANEL = "panel with buttons for each topic";
 	private final String MAIN_MENU_PANEL = "main menu panel with buttons for choices";
 
 	public static void main(String[] args) {
-		WTF = "Making this change from my second machine to test Pull/Push";
-		WTF = "change_2 (first machine)";
-		WTF = "change_3 (second machine)";
-		WTF = "change_4 (first machine)";
-		WTF = "change_5 (second machine)";
-		WTF = "works_1 (first machine)";
-		WTF = "works_2: testing local menu in Package Explorer for committing: (second machine)";
-		WTF = "works_3: Do we stage and commit the whole project, not just the MainMenu.java file?";
-		WTF = "works_4: Maybe so.  (second machine)";
-		WTF = "WORKS_1: One last run of Push and Pull...entire Project to staging (first machine)";
-		WTF = "WORKS_2: And last run the other way...(local menu this time, right click on Project and"
-				+ "commit from there)";
 		
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
