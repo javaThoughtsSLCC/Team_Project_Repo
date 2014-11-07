@@ -147,7 +147,7 @@ public class MainMenu extends JFrame {
 		mainPanel.add(startNewCrseBtn);
 		
 		JButton continueCrseBtn = new JButton("Continue Course");
-		mainPanel.add(continueCrseBtn);
+		mainPanel.add(continueCrseBtn);//jljhlkjhl
 		
 		JButton rvwPrgrsBtn = new JButton("Review Progress");
 		mainPanel.add(rvwPrgrsBtn);
