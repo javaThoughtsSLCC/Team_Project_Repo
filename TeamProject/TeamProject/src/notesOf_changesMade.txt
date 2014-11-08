@@ -1,0 +1,3 @@
+
+renamed createCardLayout() to populate_cardLayoutPanel()
+renamed mainPanel to mainMenuPanel (both in populate_cardLayoutPanek() and createMainMenuPanel()

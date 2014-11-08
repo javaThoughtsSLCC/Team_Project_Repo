@@ -30,7 +30,7 @@ public class MainMenu extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					MainMenu frame = new MainMenu();
+					MainMenu frame = new MainMenu(); //a MainMenu object is a JFrame
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -50,24 +50,24 @@ public class MainMenu extends JFrame {
 		JLabel lblWelcomToJavathoughts = createWelcomeLabel();
 		contentPane.add(lblWelcomToJavathoughts, BorderLayout.NORTH);
 		
-		cardLayoutPanel = createCardLayout();
+		cardLayoutPanel = populate_cardLayoutPanel();
 		contentPane.add(cardLayoutPanel, BorderLayout.CENTER);
 	}
 
-	private JPanel createCardLayout() {
+	private JPanel populate_cardLayoutPanel() {
 		JPanel cardLayoutPanel = createCardLayoutPanel();
 		
-		JPanel mainPanel = createMainMenuPanel();
-		cardLayoutPanel.add(mainPanel, MAIN_MENU_PANEL);
+		JPanel mainMenuPanel = createMainMenuPanel();
+		cardLayoutPanel.add(mainMenuPanel, MAIN_MENU_PANEL);
 		
 		JPanel topicChoicePanel = createTopicChoicePanel();
 		cardLayoutPanel.add(topicChoicePanel, TOPIC_CHOICE_PANEL);
+		
 		return cardLayoutPanel;
 	}
 
 	private JPanel createCardLayoutPanel() {
-		JPanel cardLayoutPanel = new JPanel();
-		
+		JPanel cardLayoutPanel = new JPanel();		
 		cardLayoutPanel.setLayout(new CardLayout(0, 0));
 		return cardLayoutPanel;
 	}
@@ -119,30 +119,31 @@ public class MainMenu extends JFrame {
 	}
 
 	private JPanel createMainMenuPanel() {
-		JPanel mainPanel = new JPanel();
+		JPanel mainMenuPanel = new JPanel();
 		
-		mainPanel.setLayout(new GridLayout(3, 3, 0, 0));
+		mainMenuPanel.setLayout(new GridLayout(3, 3, 0, 0));
 		
 		JButton startNewCrseBtn = new JButton("Start New Course");
 		startNewCrseBtn.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 //				((CardLayout) cardLayoutPanel.getLayout()).show(cardLayoutPanel, TOPIC_CHOICE_PANEL);
 				changePanel(TOPIC_CHOICE_PANEL);//since we are going to be using this casted method a lot I figured doing a method call would make it more clear
-				
+												//awesome (-geese)				
 			}
 		});
-		mainPanel.add(startNewCrseBtn);
+		mainMenuPanel.add(startNewCrseBtn);
 		
 		JButton continueCrseBtn = new JButton("Continue Course");
-		mainPanel.add(continueCrseBtn);//jljhlkjhl
+		mainMenuPanel.add(continueCrseBtn);//jljhlkjhl
 		
 		JButton rvwPrgrsBtn = new JButton("Review Progress");
-		mainPanel.add(rvwPrgrsBtn);
-		return mainPanel;
+		mainMenuPanel.add(rvwPrgrsBtn);
+		
+		return mainMenuPanel;
 	}
 
 	private JLabel createWelcomeLabel() {
-		JLabel lblWelcomToJavathoughts = new JLabel("Welcome to JavaThoughts!");
+		JLabel lblWelcomToJavathoughts = new JLabel("Welcome to JavaThoughts!  We are all Michael!");
 		lblWelcomToJavathoughts.setHorizontalAlignment(SwingConstants.CENTER);
 		return lblWelcomToJavathoughts;
 	}
